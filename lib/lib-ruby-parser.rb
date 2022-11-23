@@ -297,7 +297,7 @@ os = RbConfig::CONFIG['host_os']
 ruby_version = Gem::Version.new(RUBY_VERSION).segments.first(2).join('.')
 
 case ruby_version
-when '3.0', '2.7', '2.6'
+when '3.1', '3.0', '2.7', '2.6'
   # ok
 else
   warn "[lib-ruby-parser] You are running on windows/mingw with Ruby #{ruby_version}."
