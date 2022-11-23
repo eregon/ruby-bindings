@@ -18,7 +18,7 @@ define link_dylib
 EXTRA_CFLAGS="$(CFLAGS)" ruby \
 	scripts/link.rb \
 	main.o \
-	c-bindings/libruby_parser_c-$(TARGET).$(A) \
+	c-bindings/libruby_parser_c-$(TARGET).$(DYLIB) \
 	$(LIB_RUBY_PARSER_DYLIB)
 endef
 

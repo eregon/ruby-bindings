@@ -9,7 +9,7 @@ main.$(O): main.c nodes.h messages.h c-bindings/lib-ruby-parser.h
 	$(call compile_o)
 CLEAN += main.$(O)
 
-$(LIB_RUBY_PARSER_DYLIB): main.$(O) c-bindings/libruby_parser_c-$(TARGET).$(A)
+$(LIB_RUBY_PARSER_DYLIB): main.$(O) c-bindings/libruby_parser_c-$(TARGET).$(DYLIB)
 	$(call link_dylib)
 CLEAN += $(LIB_RUBY_PARSER_DYLIB)
 
