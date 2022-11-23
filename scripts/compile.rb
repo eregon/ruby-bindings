@@ -17,6 +17,7 @@ script = [
     include_dir(RbConfig::CONFIG['rubyhdrdir']),
     include_dir(RbConfig::CONFIG['includedir']),
     RbConfig::CONFIG['CCDLFLAGS'],
+    RbConfig::CONFIG['CPPFLAGS'],
     RbConfig::CONFIG['CFLAGS'],
     "-o #{output} -c",
     ENV['EXTRA_CFLAGS'] || '',
